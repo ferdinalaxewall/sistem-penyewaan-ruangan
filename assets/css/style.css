@@ -37,7 +37,7 @@ body{
 }
 
 .container{
-    width: 1280px;
+    width: min(1280px, 90%);
     margin: 0 auto;
 }
 
@@ -163,11 +163,12 @@ section#hero .hero-button .bx{
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .room-box{
     display: block;
-    width: 300px;
+    width: 350px;
     overflow: hidden;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
@@ -196,4 +197,264 @@ section#hero .hero-button .bx{
     object-position: center;
 }
 
+.room-box-body{
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    color: var(--clr-black);
+}
+
+.room-box-title-wrapper{
+    height: calc(var(--font-size-sub-title) * 2.2);
+}
+
+.room-box-title{
+    font-size: var(--font-size-sub-title);
+}
+
+.room-box-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.room-box-capacity{
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.room-box-capacity .bx{
+    font-size: var(--font-size-title);
+}
+
+.room-box-price{
+    display: inline-flex;
+    align-items: start;
+    column-gap: 7.5px;
+}
+
+.room-box-price .currency{
+    font-size: var(--font-size-sub-body);
+}
+
+.room-tag{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.room-tag-button{
+    background: transparent;
+    border: none;
+    color: var(--clr-white);
+    font-size: var(--font-size-title);
+}
+
+.room-tag-category{
+    background: var(--clr-primary);
+    color: var(--clr-white);
+    font-size: var(--font-size-sub-body);
+    padding: 10px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
 /* End Room Card CSS */
+
+/* Service Section CSS */
+
+section#service{
+    background-color: var(--clr-primary);
+}
+
+#service-container{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 20px;
+}
+
+.service-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 15px;
+    text-align: center;
+    color: var(--clr-white);
+}
+
+.service-box-image-wrapper{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.service-box-title{
+    font-size: var(--font-size-body);
+    font-weight: var(--font-bold);
+}
+
+/* End Service Section CSS */
+
+/* Other Rooms Section CSS */
+
+.other-rooms-box-group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.other-rooms-box{
+    position: relative;
+    color: var(--clr-white);
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.other-rooms-box::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+    z-index: 4;
+}
+
+.other-rooms-box:last-child{
+    grid-column: span 2;
+}
+
+.other-rooms-box-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.other-rooms-box-details{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.other-rooms-title{
+    font-family: var(--font-heading-family);
+    font-weight: var(--font-bold);
+    font-size: var(--font-size-title);
+    margin-bottom: 3px;
+}
+
+.other-rooms-subtitle{
+    font-size: var(--font-size-body);
+    font-weight: var(--font-body);
+}
+
+.other-rooms-link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 7.5px;
+    color: var(--clr-white);
+    border: 1px solid var(--clr-white);
+    padding: 7.5px 20px;
+    font-size: var(--font-size-sub-body);
+}
+
+.other-rooms-link:hover{
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+}
+
+.other-rooms-link .bx{
+    font-size: var(--font-size-title);
+}
+
+/* End Other Rooms Section CSS */
+
+/* Footer CSS */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.footer{
+    text-align: center;
+}
+
+#main-footer{
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.footer-navigation{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.footer-navigation li a{
+    color: var(--clr-black);
+}
+
+.footer-navigation li a:hover{
+    opacity: 0.5;
+}
+
+.social-media-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.copyright-footer{
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    padding: 17.5px;
+}
+
+/* End Footer CSS */
