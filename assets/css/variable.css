@@ -1,0 +1,17 @@
+:root{
+    --clr-primary: #1F932B;
+    --clr-black: #000;
+    --clr-white: #fff;
+    --font-body-family: 'Lato', sans-serif;
+    --font-heading-family: 'PT Sans', sans-serif;
+    --font-light: 300;
+    --font-regular: 400;
+    --font-bold: 700;
+    --font-size-sub-body: 14px;
+    --font-size-body: 16px;
+    --font-size-sub-title: 20px;
+    --font-size-title: 24px;
+    --font-size-section-sub-title: 28px;
+    --font-size-section-title: 32px;
+    --font-size-hero-title: 42px;
+}
