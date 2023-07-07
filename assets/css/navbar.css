@@ -34,6 +34,14 @@
     color: var(--clr-white);
 }
 
+body.navbar-text-dark .navbar-logo{
+    color: var(--clr-black);
+}
+
+body.navbar-text-dark .navbar.scrolled .navbar-logo{
+    color: var(--clr-white);
+}
+
 .navbar #navbar-container{
     display: flex;
     flex-direction: row;
@@ -46,6 +54,14 @@
     align-items: center;
     list-style: none;
     gap: 30px;
+}
+
+body.navbar-text-dark .navbar-link{
+    color: var(--clr-black);
+}
+
+body.navbar-text-dark .navbar.scrolled .navbar-link{
+    color: var(--clr-white);
 }
 
 .navbar-link{

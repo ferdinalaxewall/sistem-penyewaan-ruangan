@@ -63,7 +63,7 @@ a.icon-link, button{
 }
 
 .content{
-    padding: 35px 0;
+    padding: 55px 0;
 }
 
 .section-title{
@@ -402,6 +402,114 @@ section#service{
 
 /* End Other Rooms Section CSS */
 
+/* Authentication Section CSS*/
+
+section#auth-section{
+    margin-top: 75px;
+}
+
+.auth-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.auth-image{
+    width: 470px;
+    height: 540px;
+}
+
+.auth-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.auth-content-group{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auth-title{
+    font-size: var(--font-size-hero-title);
+    font-family: var(--font-heading-family);
+}
+
+.auth-subtitle{
+    font-size: var(--font-size-body);
+    font-weight: var(--font-light);
+}
+
+.input-group{
+    margin-bottom: 10px;
+}
+
+.auth-form-input{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+    gap: 10px;
+}
+
+.form-input{
+    height: 65px;
+    width: 100%;
+    padding: 7.5px 20px;
+    font-size: var(--font-size-sub-title);
+    font-family: var(--font-body-family);
+    border: 1px solid var(--clr-border);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.form-input::placeholder{
+    font-size: var(--font-size-sub-title);
+    font-family: var(--font-body-family);
+}
+
+.input-group-two-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-check-group{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.input-check-group label{
+    font-weight: var(--font-light);
+}
+
+.auth-button{
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    border: none;
+    width: 165px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    font-size: var(--font-size-sub-title);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/* End Authentication Section CSS */
+
 /* Footer CSS */
 
 .footer{
@@ -455,6 +563,10 @@ section#service{
     background-color: var(--clr-primary);
     color: var(--clr-white);
     padding: 17.5px;
+}
+
+#list-of-room{
+    margin-top: 55px;
 }
 
 /* End Footer CSS */
